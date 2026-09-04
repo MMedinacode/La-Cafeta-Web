@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>La Cafeta — Café de especialidad en Maipú</title>
+
+<!-- ============================================================
+     PROTOTIPO BETA — LA CAFETA
+     Fotografías: de ejemplo (Unsplash), a reemplazar por fotos
+     reales del local antes de la entrega final.
+     ============================================================ -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@600;700;800&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ======================= HEADER ======================= -->
+<header id="site-header">
+  <div class="nav-inner">
+    <button class="nav-brand" data-tab="inicio">
+      <span class="stamp"><img id="navIcon" alt="Ícono La Cafeta"></span>
+      <strong>LA CAFETA</strong>
+    </button>
+    <nav class="nav-links" id="main-nav">
+      <button class="nav-link active" data-tab="inicio">Inicio</button>
+      <button class="nav-link" data-tab="nosotros">Nosotros</button>
+      <button class="nav-link" data-tab="carta">Carta</button>
+      <button class="nav-link" data-tab="resenas">Reseñas</button>
+      <button class="nav-link" data-tab="visitanos">Visítanos</button>
+    </nav>
+    <div class="nav-actions">
+      <button class="cart-btn" id="cartBtn">Pedido <span class="cart-count" id="cartCount">0</span></button>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main-content">
+
+<!-- ======================= INICIO ======================= -->
+<section id="tab-inicio" class="tab-panel active" data-tab-panel="inicio">
+<section class="hero">
+  <div class="bg-photo">
+    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=1600&auto=format&fit=crop" alt="">
+  </div>
+  <img class="logo-full hero-mark reveal" id="heroLogo" alt="Logo La Cafeta">
+  <span class="eyebrow reveal">Café de especialidad en tu barrio</span>
+  <h1 class="reveal">Café de especialidad, pastelería y sándwiches gourmet en Maipú</h1>
+  <p class="tagline reveal">De espresso a matcha con base de frutas, de macarons a paila gringa — una carta pensada para desayunar, almorzar o solo pasar por un café bien hecho.</p>
+  <div class="hero-info reveal">
+    <div class="hero-pill"><span class="status-dot" id="statusDot"></span> <span id="statusText">Consultando horario…</span></div>
+    <div class="hero-pill">★ <strong>5.0</strong> (33 opiniones)</div>
+    <div class="hero-pill"><strong>Av. El Rosal 6361</strong>, Maipú</div>
+  </div>
+  <div class="cta-row reveal">
+    <button class="btn btn-solid" data-tab="carta">Ver la carta</button>
+    <a class="btn btn-outline" href="https://wa.me/56948961990" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+  </div>
+</section>
+</section>
+
+<!-- ======================= NOSOTROS ======================= -->
+<section id="tab-nosotros" class="tab-panel" data-tab-panel="nosotros">
+<section>
+  <div class="wrap sobre">
+    <span class="eyebrow reveal" style="color:var(--teal); font-family:'Space Mono',monospace; letter-spacing:0.16em; text-transform:uppercase; font-size:0.7rem;">quiénes somos</span>
+    <h2 class="reveal" style="margin-bottom:20px;">Café de especialidad, hecho para el barrio</h2>
+    <p class="reveal">La Cafeta es una cafetería de especialidad en el Centro Comercial El Rosal, en Maipú. La carta va desde espresso clásico hasta bebidas de autor como el matcha latte con base de frutas o el whitemoka pistacho, con pastelería que incluye macarons y opciones sin azúcar, y sándwiches gourmet con versiones vegetarianas y veganas. Un espacio a la moda, agradable e informal, con entrada y estacionamiento accesibles, Wi-Fi gratis, y un ambiente LGBTQ+ friendly y seguro para personas trans.</p>
+    <div class="badges-row reveal">
+      <span class="badge" style="border-color:rgba(47,143,150,0.4); color:var(--teal-dark); background:rgba(47,143,150,0.08);">LGBTQ+ friendly</span>
+      <span class="badge" style="border-color:rgba(47,143,150,0.4); color:var(--teal-dark); background:rgba(47,143,150,0.08);">Espacio seguro para personas trans</span>
+      <span class="badge" style="border-color:rgba(26,26,26,0.25); color:var(--ink); background:rgba(26,26,26,0.04);">Wi-Fi gratis</span>
+      <span class="badge" style="border-color:rgba(26,26,26,0.25); color:var(--ink); background:rgba(26,26,26,0.04);">Accesible en silla de ruedas</span>
+      <span class="badge" style="border-color:rgba(26,26,26,0.25); color:var(--ink); background:rgba(26,26,26,0.04);">Se admiten perros</span>
+      <span class="badge" style="border-color:rgba(26,26,26,0.25); color:var(--ink); background:rgba(26,26,26,0.04);">Se aceptan reservas</span>
+    </div>
+  </div>
+</section>
+
+<div class="divider"><span class="stamp" style="width:34px;height:34px;"><img id="dividerIcon" alt="Ícono La Cafeta"></span></div>
+
+<section style="background:var(--teal-dark); color:#fff;">
+  <div class="wrap">
+    <div class="section-head dark reveal">
+      <span class="eyebrow">para chusmear</span>
+      <h2>Nuestro espacio</h2>
+    </div>
+    <div class="gallery-grid reveal">
+      <figure><img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=800&auto=format&fit=crop" alt="Café con arte latte"><div class="gallery-tag">Café de especialidad</div></figure>
+      <figure><img src="https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?q=80&w=800&auto=format&fit=crop" alt="Vitrina de tortas"><div class="gallery-tag">Vitrina de tortas</div></figure>
+      <figure><img src="https://images.unsplash.com/photo-1550507992-eb63ffee0847?q=80&w=800&auto=format&fit=crop" alt="Avocado toast"><div class="gallery-tag">Tostadas y desayunos</div></figure>
+      <figure><img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=800&auto=format&fit=crop" alt="Sándwich gourmet"><div class="gallery-tag">Sándwiches gourmet</div></figure>
+    </div>
+    <!-- FOTOGRAFÍAS DE EJEMPLO (Unsplash): reemplazar por fotos reales de la barra y la vitrina antes de la entrega final -->
+  </div>
+</section>
+</section>
+
+<!-- ======================= CARTA ======================= -->
+<section id="tab-carta" class="tab-panel" data-tab-panel="carta">
+<section style="background:var(--white);">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">la carta</span>
+      <h2>Nuestra carta</h2>
+    </div>
+    <div class="menu-tabs reveal" id="menuTabs"></div>
+    <div id="menuPanels"></div>
+    <p class="menu-note reveal">Haz tu bebida fría +$400 · Cambia a bebida vegetal +$500 · Agrega syrup o crema +$400. En sándwiches: cambia a croissant +$1.200, ingrediente extra +$600.</p>
+  </div>
+</section>
+</section>
+
+<!-- ======================= RESEÑAS ======================= -->
+<section id="tab-resenas" class="tab-panel" data-tab-panel="resenas">
+<section>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">lo que dicen</span>
+      <h2>33 opiniones en Google</h2>
+    </div>
+
+    <div class="resena-resumen reveal">
+      <div class="stars">★★★★★</div>
+      <blockquote>"Los comensales dicen que les encanta el delicioso café, los pasteles y los sándwiches de esta cafetería. Mencionan los ingredientes frescos y la variedad de opciones, incluidas las vegetarianas. También destacan los precios razonables y la alta calidad de los productos."</blockquote>
+      <footer>— Resumen de opiniones de Google Maps · 5.0 / 5 (33 opiniones)</footer>
+    </div>
+
+    <div class="reveal" style="display:grid; grid-template-columns:repeat(3,1fr); gap:24px; margin-top:44px; text-align:left;">
+      <article class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>"Gran café, excelente atención, muy tranquilo y de gran calidad el café que preparan, pastelería amplia y para todos gustos. Muy recomendado."</p>
+        <div class="review-meta">
+          <span class="review-avatar">VP</span>
+          <p>Victor Pin<br/>Local Guide · 304 opiniones · hace 6 meses</p>
+        </div>
+      </article>
+      <article class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>"Fuimos con mi pololo y fue literalmente la mejor cafetería que hemos ido. El chai latte más exquisito que he probado en mi vida y la galleta de pistacho, a muy buen precio."</p>
+        <div class="review-meta">
+          <span class="review-avatar">RC</span>
+          <p>Rocío Contreras Jara<br/>hace 7 meses</p>
+        </div>
+      </article>
+      <article class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>"Muy buen lugar! Todo exquisito, pedimos un sándwich, el pan estaba muy bueno y las verduras frescas. Buena calidad precio. Full recomendado."</p>
+        <div class="review-meta">
+          <span class="review-avatar">FM</span>
+          <p>Florencia Monsalve<br/>Local Guide · hace 3 meses</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="reveal" style="text-align:center; margin-top:44px;">
+      <a class="btn btn-solid" href="https://search.google.com/local/writereview?placeid=0x9662c3005306fa65:0x11315a8628adfece" target="_blank" rel="noopener">Déjanos tu reseña en Google</a>
+    </div>
+  </div>
+</section>
+</section>
+
+<!-- ======================= VISÍTANOS ======================= -->
+<section id="tab-visitanos" class="tab-panel" data-tab-panel="visitanos">
+<section class="visit" style="background:linear-gradient(180deg, var(--ink-2), var(--teal-dark)); color:#fff;">
+  <div class="wrap visit-grid">
+    <div class="reveal">
+      <div class="section-head dark" style="text-align:left; margin-bottom:32px;">
+        <span class="eyebrow">te esperamos</span>
+        <h2>Visítanos</h2>
+      </div>
+      <div class="visit-block"><h3>Dirección</h3><p>Av. El Rosal 6361, Local 8, Centro Comercial El Rosal, Maipú</p></div>
+      <div class="visit-block"><h3>Horario</h3><p id="visit-status" style="margin-bottom:6px;"></p><p>Lunes a sábado 10:00 a 21:00h<br>Domingo 11:00 a 21:00h<br>Cerramos cocina a las 20:30h</p></div>
+
+      <div style="display:flex; flex-direction:column; gap:12px; margin:26px 0 30px;">
+        <a class="interactive-box" href="https://instagram.com/lacafeta_maipu" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#bfe3e5" stroke-width="1.6" style="flex-shrink:0;"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
+          <div><p class="ib-label">Instagram</p><p class="ib-value">@lacafeta_maipu</p></div>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-left:auto; flex-shrink:0;"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="interactive-box" href="https://wa.me/56948961990" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#bfe3e5" stroke-width="1.6" style="flex-shrink:0;"><path d="M17 14c-.3-.15-1.75-.86-2-.96-.27-.1-.47-.15-.66.15-.2.3-.76.95-.93 1.15-.17.2-.34.22-.63.08-.3-.15-1.24-.46-2.37-1.46-.87-.78-1.47-1.74-1.64-2.04-.17-.3-.02-.46.13-.6.13-.13.3-.34.44-.5.15-.18.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.66-1.6-.9-2.18-.24-.58-.48-.5-.66-.5h-.56c-.2 0-.53.08-.8.38-.28.3-1.05 1.02-1.05 2.5s1.07 2.9 1.22 3.1c.15.2 2.1 3.2 5.1 4.5.71.3 1.27.5 1.7.63.72.23 1.37.2 1.9.12.58-.09 1.75-.72 2-1.4.24-.7.24-1.3.17-1.4-.07-.13-.27-.2-.56-.35Z"/><circle cx="12" cy="12" r="9.3"/></svg>
+          <div><p class="ib-label">WhatsApp</p><p class="ib-value">+56 9 4896 1990</p></div>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-left:auto; flex-shrink:0;"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="interactive-box" id="wa-visit-directions" href="https://www.google.com/maps/dir/?api=1&destination=La+Cafeta&destination_place_id=0x9662c3005306fa65:0x11315a8628adfece" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#bfe3e5" stroke-width="1.6" style="flex-shrink:0;"><path d="M12 22s7-7.2 7-12.5A7 7 0 0 0 5 9.5C5 14.8 12 22 12 22z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+          <div><p class="ib-label">Cómo llegar</p><p class="ib-value">Ver ruta en Google Maps</p></div>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-left:auto; flex-shrink:0;"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="map-frame reveal">
+      <iframe loading="lazy" src="https://www.google.com/maps?q=Av.+El+Rosal+6361,+Maip%C3%BA&output=embed"></iframe>
+    </div>
+  </div>
+</section>
+</section>
+
+</main>
+
+<!-- ======================= FOOTER ======================= -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <img class="logo-full footer-mark" id="footerLogo" alt="Logo La Cafeta">
+    <p class="footer-tag">Café de especialidad en tu barrio · Maipú</p>
+    <div class="footer-badges">
+      <span class="badge" style="border-color:rgba(255,255,255,0.3); color:#fff; background:rgba(255,255,255,0.06);">Tarjetas y pago con celular</span>
+      <span class="badge" style="border-color:rgba(255,255,255,0.3); color:#fff; background:rgba(255,255,255,0.06);">Estacionamiento gratuito</span>
+      <span class="badge" style="border-color:rgba(255,255,255,0.3); color:#fff; background:rgba(255,255,255,0.06);">Ideal para ir con niños</span>
+    </div>
+    <div class="footer-divider"></div>
+    <div class="footer-links">
+      <a href="https://instagram.com/lacafeta_maipu" target="_blank" rel="noopener">@lacafeta_maipu</a>
+      <span>·</span>
+      <span>Sitio demo diseñado con cariño</span>
+    </div>
+  </div>
+</footer>
+
+<!-- OVERLAY CARRITO -->
+<div class="overlay" id="cartOverlay">
+  <div class="cart-panel">
+    <button class="close-x" id="cartCloseBtn">&times;</button>
+    <h3>Tu pedido</h3>
+    <div id="cartLines"><p class="cart-empty">Todavía no agregaste nada.</p></div>
+    <div class="cart-total"><span>Total</span><span class="mono" id="cartTotal">$0</span></div>
+    <a class="btn btn-solid" style="justify-content:center; margin-top:14px;" id="checkoutBtn" href="#" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+  </div>
+</div>
+
+<!-- OVERLAY MODAL PRODUCTO -->
+<div class="overlay modal-overlay" id="modalOverlay">
+  <div class="modal-box">
+    <button class="close-x" id="modalCloseBtn">&times;</button>
+    <h3 id="modalName"></h3>
+    <div class="price mono" id="modalPrice"></div>
+    <p class="desc" id="modalDesc"></p>
+    <button class="btn btn-solid" style="width:100%; justify-content:center;" id="modalAddBtn">Agregar a la bolsa</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
