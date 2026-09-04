@@ -7,8 +7,6 @@
 
 <!-- ============================================================
      PROTOTIPO BETA — LA CAFETA
-     Fotografías: de ejemplo (Unsplash), a reemplazar por fotos
-     reales del local antes de la entrega final.
      ============================================================ -->
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,7 +45,7 @@
 <section id="tab-inicio" class="tab-panel active" data-tab-panel="inicio">
 <section class="hero">
   <div class="bg-photo">
-    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=1600&auto=format&fit=crop" alt="">
+    <img src="Fotos/fachada.jpg" alt="Fachada de La Cafeta">
   </div>
   <img class="logo-full hero-mark reveal" id="heroLogo" alt="Logo La Cafeta">
   <span class="eyebrow reveal">Café de especialidad en tu barrio</span>
@@ -92,12 +90,11 @@
       <h2>Nuestro espacio</h2>
     </div>
     <div class="gallery-grid reveal">
-      <figure><img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=800&auto=format&fit=crop" alt="Café con arte latte"><div class="gallery-tag">Café de especialidad</div></figure>
-      <figure><img src="https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?q=80&w=800&auto=format&fit=crop" alt="Vitrina de tortas"><div class="gallery-tag">Vitrina de tortas</div></figure>
-      <figure><img src="https://images.unsplash.com/photo-1550507992-eb63ffee0847?q=80&w=800&auto=format&fit=crop" alt="Avocado toast"><div class="gallery-tag">Tostadas y desayunos</div></figure>
-      <figure><img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=800&auto=format&fit=crop" alt="Sándwich gourmet"><div class="gallery-tag">Sándwiches gourmet</div></figure>
+      <figure><img src="Fotos/sandwich-cappuccino.jpg" alt="Sándwich panini y cappuccino con arte latte"><div class="gallery-tag">Café de especialidad</div></figure>
+      <figure><img src="Fotos/vitrina.jpg" alt="Vitrina de tortas"><div class="gallery-tag">Vitrina de tortas</div></figure>
+      <figure><img src="Fotos/brunch.jpg" alt="Avocado toast, huevos y café"><div class="gallery-tag">Tostadas y desayunos</div></figure>
+      <figure><img src="Fotos/matcha-boba.jpg" alt="Matcha latte con boba"><div class="gallery-tag">Bebidas de autor</div></figure>
     </div>
-    <!-- FOTOGRAFÍAS DE EJEMPLO (Unsplash): reemplazar por fotos reales de la barra y la vitrina antes de la entrega final -->
   </div>
 </section>
 </section>
@@ -112,7 +109,6 @@
     </div>
     <div class="menu-tabs reveal" id="menuTabs"></div>
     <div id="menuPanels"></div>
-    <p class="menu-note reveal">Haz tu bebida fría +$400 · Cambia a bebida vegetal +$500 · Agrega syrup o crema +$400. En sándwiches: cambia a croissant +$1.200, ingrediente extra +$600.</p>
   </div>
 </section>
 </section>
@@ -197,7 +193,8 @@
       </div>
     </div>
     <div class="map-frame reveal">
-      <iframe loading="lazy" src="https://www.google.com/maps?q=Av.+El+Rosal+6361,+Maip%C3%BA&output=embed"></iframe>
+      <!-- Embed real generado desde la ficha de Google Maps del negocio: muestra el pin con el nombre "La Cafeta" en vez de solo la dirección -->
+      <iframe loading="lazy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3327.823285799263!2d-70.75666749999999!3d-33.479951299999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c3005306fa65%3A0x11315a8628adfece!2sLa%20Cafeta!5e0!3m2!1ses-419!2scl!4v1788564955033!5m2!1ses-419!2scl" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
     </div>
   </div>
 </section>
@@ -239,6 +236,7 @@
 <div class="overlay modal-overlay" id="modalOverlay">
   <div class="modal-box">
     <button class="close-x" id="modalCloseBtn">&times;</button>
+    <div class="modal-photo" id="modalPhoto" style="display:none;"></div>
     <h3 id="modalName"></h3>
     <div class="price mono" id="modalPrice"></div>
     <p class="desc" id="modalDesc"></p>
